@@ -33,6 +33,25 @@
       console.log(newStr);
       var secondStr = str.replace(/o/g, "u");
       console.log(secondStr);
+      // Ex: 7
+      var items = ["taula", "cadira", "ordinador", "llibreta"];
+      items.forEach(myFunction);
+      function myFunction(item, index) {
+        console.log(`L'objecte ${item} està a la posició ${index}.`);
+      }
+      // Ex: 8
+      function calculadora(operador, valor1, valor2) {
+        if (operador === "+") {
+          console.log(valor1 + valor2);
+        } else if (operador === "-") {
+          console.log(valor1 - valor2);
+        } else if (operador === "*") {
+          console.log(valor1 * valor2);
+        } else {
+          console.error("L'operació no és acceptada.");
+        }
+      }
+      var resultat = calculadora("+", 20, 10);
     </script>
   </head>
   <body></body>
