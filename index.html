@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>JS Basic</title>
     <script type="text/javascript">
       // Ex: 1
@@ -56,22 +55,22 @@
       let operador = ["+", "-", "*", "/"];
 
       function calculadora(operador, valor1, valor2) {
-        if (operador === "suma") {
+        if (operador === "+") {
           console.log(valor1 + valor2);
-        } else if (operador === "resta") {
+        } else if (operador === "-") {
           console.log(valor1 - valor2);
-        } else if (operador === "multiplicación") {
+        } else if (operador === "*") {
           console.log(valor1 * valor2);
-        } else if (operador === "división" && valor2 !== 0) {
+        } else if (operador === "/" && valor2 !== 0) {
           console.log(valor1 / valor2);
-        } else if (operador === "división" && valor2 === 0) {
+        } else if (operador === "/" && valor2 === 0) {
           console.error("Error");
         } else {
           console.error("L'operació no és acceptada.");
         }
       }
 
-      calculadora("división", 2, 0);
+      calculadora("+", 3, 2);
     </script>
   </head>
   <body></body>
